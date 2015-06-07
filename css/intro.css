@@ -31,7 +31,7 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform:;
+    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -86,13 +86,13 @@ header {
 }
 
 header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top:0px;
+    padding-bottom:0px;
 }
 
 header img {
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 0px;
 }
 
 header .intro-text .name {
@@ -262,10 +262,10 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px white;
     font-size: 20px;
-    color: #fff;
-    background: 0 0;
+    color:white;
+    background:darkslateblue;
     transition: all .3s ease-in-out;
 }
 
@@ -273,9 +273,9 @@ section.success a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    border: solid 2px white;
+    color:seagreen;
+    background:white;
 }
 
 .floating-label-form-group {
