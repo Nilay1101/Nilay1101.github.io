@@ -171,12 +171,12 @@ input {
 
 /* HEADER SECTION */
 #h {
-	background: url(../img/header.jpg) no-repeat center top;
+	background: url(../img/shot13.jpg) no-repeat center top;
 	padding-top: 10px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 690px;
+	min-height: 600px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -223,25 +223,6 @@ input {
 	font-size: 16px;
 }
 
-
-/* Blue Section - Picton */
-#picton {
-	background: #59ABE3;
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: white;
-}
-
-#picton .col-md-6 {
-	padding-left: 0px;
-}
-
-#picton p {
-	color: #e9e9e9;
-	font-size: 16px;
-}
-
 /* Blue Section - Curious */
 #curious {
 	background: #3498DB;
@@ -260,72 +241,3 @@ input {
 	font-size: 16px;
 }
 
-/* Blue Section - Malibu */
-#malibu {
-	background: #6BB9F0;
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: white;
-}
-
-#malibu .col-md-6 {
-	padding-left: 0px;
-}
-
-#malibu p {
-	color: #e9e9e9;
-	font-size: 16px;
-}
-
-/* Blue Section - Jelly */
-#jelly {
-	background: #2574A9;
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: white;
-}
-
-#jelly p {
-	color: #e9e9e9;
-	font-size: 16px;
-}
-
-#jelly h1 {
-	font-size: 200px;
-}
-
-#jelly h3 {
-	margin-top: 10px;
-}
-
-/* FOOTER */
-#f {
-	background: #2f2f2f;
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: white;
-}
-
-#f p {
-	color: white;
-}
-
-#f h4 {
-	font-weight: 400;
-	text-align: center;
-	font-size: 24px;
-}
-
-/* CREDIT */
-#c {
-	background: black;
-	padding: 20px;
-}
-
-#c p {
-	color: white;
-	font-size: 13px;
-}
