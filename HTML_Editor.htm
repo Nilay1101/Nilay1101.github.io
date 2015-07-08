@@ -9,7 +9,7 @@ var editboxHTML =
 '<head>' +
 '<style type="text/css">' +
 '.expand { width: 100%; height: 100%; }' +
-'.close { border: none; margin: 0px; padding: 0px; }' +
+'.close { border-radius: 0px; margin: 0px; padding: 0px; }' +
 'html,body { overflow: hidden; }' +
 '<\/style>' +
 '<\/head>' +
@@ -21,11 +21,11 @@ var editboxHTML =
 '<\/body>' +
 '<\/html>';
 
-var defaultStuff = '<h3>Welcome to the real-time HTML/CSS editor!<\/h3>\n' +
-'<p>Type HTML/CSS in the textarea above, and it will execute in the frame below.<\/p>';
+var defaultStuff = '<div style="border:1px solid seagreen"><h3 style="text-align:center">Welcome to the real-time HTML/CSS editor!<\/h3></div>\n' +
+'<p><h4> - Type HTML/CSS in the textarea above, and it will execute in the frame below.</h4><\/p>\n' +
+'<h4 style="color:seagreen ; text-align:center">Enjoy!! <\/h4>';
 
-// I don't want this stuff to appear in the box at the top because I feel it's likely to be distracting.
-var extraStuff = '<div style="position:absolute; margin:.3em; bottom:0em; right:0em;"><small>\n  Created by <a href="http://seasondesigns.ml/" target="_top">seasons<\/a><\/small><\/div>';
+var extraStuff = '<div style="position:absolute; text-decoration:none; margin:.3em; bottom:0em; right:0em;">\n<a href="index.html" target="_top">Exit<\/a><\/div>';
 
 var old = '';
          
@@ -58,7 +58,6 @@ function update()
 </head>
 
 <frameset resizable="yes" rows="50%,*" onload="init();">
-  <!-- about:blank confuses opera, so use javascript: URLs instead -->
   <frame name="editbox" src="javascript:'';">
   <frame name="dynamicframe" src="javascript:'';">
 </frameset>
