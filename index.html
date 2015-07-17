@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+	<link rel="icon" href="img/seasons.jpg" type="image/jpg">
 
     <title> | Seasons |</title>
 
@@ -41,56 +42,94 @@
                 <a href="#top" onclick = $("#menu-close").click(); ><i class="fa fa-home fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); ><i class="fa fa-globe fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</a>
+                <a href="#gallery" onclick = $("#menu-close").click(); ><i class="fa fa-gift fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</a>
             </li>
             <li>
-                 <a href="#footer"><i class="fa fa-photo fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Utilizers</a>
+                 <a href="#U"><i class="fa fa-pencil fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Utilizers</a>
             </li>
 			<li>
-                 <a href="blog/blog.html"><i class="fa fa-eye fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Blog Crafter</a>
+                 <a href="blog/blog.html"><i class="fa fa-tablet fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Blog Crafter</a>
             </li>
 			 <li>
-                <a href="student/index.html"><i class="fa fa-book fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student's Corner </a>
+                <a href="student/student.html"><i class="fa fa-book fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Student's Corner </a>
             </li>
             <li>
-                <a href="developer/developer.html"><i class="fa fa-github fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer </a>
+                <a href="developer/developer.html"><i class="fa fa-user fa-fw"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer </a>
             </li>
         </ul>
     </nav>
-
+									
     <!-- Intro Header -->
+	
     <header class="intro">
+	<div class="row">
+	<div class="col-lg-3">
+	<a href="#" class="btn btn-white btn-green">G<i class="fa fa-compass fa-fw"></i> Professional</a>
+	</div>
+	</div>
         <div class="intro-body">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
+                <div class="row"> 			
+                    <div class="col-lg-10">
 					<div class="post-heading">
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-						<hr class="intro-divider">	
+                        </a>	
                     </div>
                 </div>
             </div>
         </div>
     </header>
- 
+
+<!-- News Feed -->
+
+    <section  class="services bg-default">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <hr class="small">
+					 <marquee class="bg-success">
+					 <div class="row">
+					 <ul class="list-inline">
+					 <li></li><li></li><li></li>
+					 <li><img src="img/feed1.jpg"></li>
+					 <li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+					 <li><img src="img/feed2.jpg"></li>
+					 <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+					 <li><img src="img/feed3.gif"></li>
+					 </ul>
+					 
+					 <ul class="list-inline">
+					 <li><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seasons announces its first set of Courses - html / css and C / C++ Programming</h5></li>
+					 <li><h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seasons plans to host Seasons-Professional for its Team</h5></li>
+					 </ul>
+					 </marquee>
+					 <hr class="small">
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+	
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                 <h2>About</h2>
-				 <hr class="small">
 							<p>Design is not just what it looks like and feels like.Design is how it works.
 							<br><a href="#">-Steve Jobs</a></p>
 				 <p><a href="facebook.com/seasondesigns">Seasons</a>-A paged responsive site with great user experience.</p>
             </div>
         </div>
     </section> 
-
-    <!-- Services -->
-    <section id="services" class="services bg-primary">
+<br><br><br>
+    <!-- Gallery -->
+    <section id="gallery" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
@@ -106,7 +145,7 @@
                                 <h4>
                                     <strong>Startups</strong>
                                 </h4>
-                                <a href="event01/event01.html" class="btn btn-light">Expl<i class="fa fa-cloud fa-fw"></i>re</a>
+                                <a href="event01/event01.html" class="btn btn-light">Expl<i class="fa fa-compass fa-fw fa-spin"></i>re</a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-7">
@@ -118,7 +157,7 @@
                                 <h4>
                                     <strong>Add-ons</strong>
                                 </h4>
-                                <a href="#" class="btn btn-light">Expl<i class="fa fa-cloud fa-fw"></i>re</a>
+                                <a href="event02/event02.html" class="btn btn-light">Expl<i class="fa fa-compass fa-fw fa-spin"></i>re</a>
                             </div>
                         </div>
 						 <div class="col-md-4 col-sm-7">
@@ -130,7 +169,7 @@
                                 <h4>
                                     <strong>References</strong>
                                 </h4>
-                                <a href="#" class="btn btn-light">Expl<i class="fa fa-cloud fa-fw"></i>re</a>
+                                <a href="event03/event03.html" class="btn btn-light">Expl<i class="fa fa-compass fa-fw fa-spin"></i>re</a>
                             </div>
                         </div>
                     </div>
@@ -142,18 +181,16 @@
         </div>
         <!-- /.container -->
     </section>
-
-	<br><br><br><br><br>
-	
-    <!-- Utilizers -->
-    <section id="footer" class="services bg-primary">
+<br><br><br><br><br><br><br><br>
+	   <!-- Utilizers -->
+    <section id="U" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2>Utilizers</h2>
                     <hr class="small">
                     <div class="row">
-					 <div class="col-md-3 col-sm-6">
+					 <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -162,22 +199,10 @@
                                 <h4>
                                     <strong>HTML / CSS Editor</strong>
                                 </h4>
-                                <a href="HTML_Editor.htm" class="btn btn-light">C<i class="fa fa-cloud fa-fw"></i>de</a>
+                                <a href="HTML_Editor.htm" class="btn btn-light">C<i class="fa fa-compass fa-fw fa-spin"></i>de</a>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>PHP Editor</strong>
-                                </h4>
-                                <a href="#" class="btn btn-light">C<i class="fa fa-cloud fa-fw"></i>de</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
+						 <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -186,21 +211,22 @@
                                 <h4>
                                     <strong>C / C++ Editor</strong>
                                 </h4>
-                                <a href="#" class="btn btn-light">C<i class="fa fa-cloud fa-fw"></i>de</a>
+                                <a href="#" class="btn btn-light">C<i class="fa fa-compass fa-fw fa-spin"></i>de</a>
                             </div>
                         </div>
-						<div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                                <i class="fa fa-gears fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
-                                    <strong>Python Editor</strong>
+                                    <strong>PHP Editor</strong>
                                 </h4>
-                                <a href="#" class="btn btn-light">C<i class="fa fa-cloud fa-fw"></i>de</a>
+                                <a href="#" class="btn btn-light">C<i class="fa fa-compass fa-fw fa-spin"></i>de</a>
                             </div>
                         </div>
+                       
                     </div>
                     <!-- /.row (nested) -->
                 </div>
@@ -211,31 +237,45 @@
         <!-- /.container -->
     </section>
 	
-	
+<br><br><br><br>	
     <!-- Footer -->
-    <footer>
+
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-lg-10 col-lg-offset-1 text-center ">
                     <br>
 					<br>
 					<ul class="list-inline">
                         <li>
-                            <a href="https://www.facebook.com/seasondesigns" ><h1><i class="fa fa-facebook fa-fw"></i></h1></a>
+                            <a href="https://www.facebook.com/seasondesigns" ><h1>
+							<span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x text-info"></i>
+                            </span>
+							</a>
                         </li>
                         <li>
-                            <a href="https://github.com/Nilay1101" ><h1><i class="fa fa-github fa-fw"></i></h1></a>
+                            <a href="https://github.com/Nilay1101" ><h1>
+							<span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x text-info"></i>
+                            </span>
+							</a>
                         </li>
                         <li>
-                            <a href="https://in.linkedin.com/pub/nilay-jayswal/b6/759/b19" ><h1><i class="fa fa-linkedin fa-fw"></i><h1></a>
+                            <a href="https://in.linkedin.com/pub/nilay-jayswal/b6/759/b19" ><h1>
+							<span class="fa-stack fa-1x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-linkedin fa-stack-1x text-info"></i>
+                            </span>
+							</a>
                         </li>
                     </ul>
                     <hr class="small">
-					 <p class="text-muted"><h5>Copyright &copy; Seasons 2015</h5></p>
+					 <h5>Copyright &copy; Seasons 2015</h5>
                 </div>	
             </div>
         </div>
-    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
