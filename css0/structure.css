@@ -29,7 +29,7 @@ body {
 
 .btn-dark {
     border-radius: 0;
-    color: red;
+    color: #3498DB;
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -49,8 +49,9 @@ body {
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
-    color: red;
+    color: #3498DB;
     background-color: rgba(255,255,255,0.8);
+
 }
 
 /* Custom Horizontal Rule */
@@ -167,8 +168,16 @@ hr.small {
 /* Services */
 
 .services {
+    padding-top: 10px ;
+	padding-bottom: 10px ;
+	height:200px;
+	background-color:#ebebeb;
+}
+
+.service {
     padding: 50px 0;
 }
+
 
 .service-item {
     margin-bottom: 30px;
