@@ -20,6 +20,42 @@ html, body {
 
 /* GLOBAL  STYLES  */
 
+#h {
+	background: url(../img/shot00.jpg) no-repeat center top;
+	padding-top: 10px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 250px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#h h1 {
+	color: white;
+	font-weight: 900;
+	font-size: 70px;
+	letter-spacing: 5px;
+}
+
+#h h3 {
+	color: white;
+	font-weight: 400;
+}
+
+#h img {
+	padding-bottom: 0px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 }
 
@@ -123,8 +159,8 @@ color: seagreen;
 /* HOME SECTION STYLES */
 
 #home-section {
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #counter-default {
