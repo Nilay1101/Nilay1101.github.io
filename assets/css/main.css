@@ -505,14 +505,15 @@ hr {
     margin-left: 10px;
 }
 .cardinfo {
-    background: #fff;
+    background:lightgrey;
     padding: 15px;
     margin: 2px;
-    text-align: left;
+    text-align:left;
 }
 .cardinfo i {
     font-size: 18px;
     padding-right: 20px;
+	
 }
 .grid {
     max-width: 69em;
