@@ -1,0 +1,415 @@
+/*
+ * jQuery FlexSlider v2.4.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ * 
+ */
+
+ /* RESETS
+-------------------------------------------------------------- */
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+	outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+	/* BASE STYLES
+-------------------------------------------------------------- */
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+	width: 100%;
+	display: block;
+}
+.flexslider .slides:after {
+	content: "\0020";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+html[xmlns] .flexslider .slides {
+	display: block;
+}
+* html .flexslider .slides {
+	height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+	display: block;
+}
+
+	/* DEFAULT THEME
+-------------------------------------------------------------- */
+.flexslider {  
+	position: relative;
+	zoom: 1;
+}
+
+.flexslider .slides {
+	zoom: 1;
+}
+
+.flexslider .slides img {
+	height: auto;
+}
+
+.flex-viewport {
+	max-height: 2000px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.loading .flex-viewport {
+	max-height: 300px;
+}
+
+.carousel li {
+	margin-right: 5px;
+}
+
+.flexslider .flex-nav-prev,
+.flexslider .flex-nav-next {
+	border: 1px solid #fff;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	line-height: 50px;
+	position: absolute;
+	text-indent: 9999px;
+	top: 50%;	
+	margin-top: -25px; 
+	overflow: hidden;
+	-webkit-border-radius: 2px;
+		 -moz-border-radius: 2px;
+		 -o-border-radius: 2px;
+			border-radius: 2px;
+}
+
+.flexslider .flex-nav-prev {
+	left: 30px;	
+}
+
+.flexslider .flex-nav-next {
+	right: 30px;	
+}
+
+.flexslider .flex-nav-prev .flex-prev{
+	/*background: url("../images/icon/pre.png");*/
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 17px;
+	margin: -6px 0 0 6px;
+}
+
+.flexslider .flex-nav-next .flex-next {
+	/*background: url("../images/icon/next.png");		*/
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 17px;
+	margin: -6px 6px 0 0 ;	
+}
+
+
+	/* Directon Nav
+-------------------------------------------------------------- */
+.flex-direction-nav {
+	*height: 0;
+}
+.flex-direction-nav a {
+	text-decoration: none;
+	font-size: 40px;
+	color: #000;
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: -20px 0 0;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	overflow: hidden;
+	cursor: pointer;
+}
+.flex-direction-nav .flex-prev {
+	left: 10px;
+}
+.flex-direction-nav .flex-next {
+	right: 10px;
+	text-align: right;
+}
+
+	/* Control Nav
+-------------------------------------------------------------- */
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: -40px;
+	text-align: center;
+}
+.flex-control-nav li {
+	margin: 0 6px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.flex-control-paging li a {
+	width: 11px;
+	height: 11px;
+	display: block;
+	background: #666;
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.flex-control-paging li a:hover {
+	background: #333;
+	background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+	background: #000;
+	cursor: default;
+}
+
+	/* Control Thumbs
+-------------------------------------------------------------- */
+.flex-control-thumbs {
+	margin: 5px 0 0;
+	position: static;
+	overflow: hidden;
+}
+.flex-control-thumbs li {
+	width: 25%;
+	float: left;
+	margin: 0;
+}
+.flex-control-thumbs img {
+	width: 100%;
+	height: auto;
+	display: block;
+	opacity: .7;
+	cursor: pointer;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+	opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+	opacity: 1;
+	cursor: default;
+}
+.flex-pauseplay a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	opacity: 0.8;
+	z-index: 10;
+	overflow: hidden;
+	cursor: pointer;
+	color: #000;
+}
+.flex-pauseplay a:hover {
+	opacity: 1;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 768px) {
+	.flex-direction-nav .flex-prev {
+		opacity: 1;
+		left: 10px;
+	}
+	.flex-direction-nav .flex-next {
+		opacity: 1;
+		right: 10px;
+	}
+}
+
+/* Event Slide When Show */
+.GhostIn, .FromTop, .FromRight, .FromBottom, .FromLeft, .roll-bounceInDown, .roll-bounceOutDown,
+.roll-bounceInLeft, .roll-bounceInRight, .roll-tada, .roll-zoomIn, .roll-zoomOut {opacity: 0; transition: all 1.5s ease-in-out; -webkit-transition: all 1.5s ease-in-out;}
+
+.flexslider li.flex-active-slide .GhostIn {opacity: 1;}
+
+.flexslider li .FromTop {transform: translateY(-100%); -o-transform: translateY(-100%); -ms-transform: translateY(-100%); -webkit-transform: translateY(-100%);}
+.flexslider li.flex-active-slide .FromTop {opacity: 1; transform: translateY(0); -o-transform: translateY(0%); -ms-transform: translateY(0); -webkit-transform: translateY(0);}
+
+.flexslider li .FromBottom {transform: translateY(100%); -o-transform: translateY(100%); -ms-transform: translateY(100%); -webkit-transform: translateY(100%);}
+.flexslider li.flex-active-slide .FromBottom {opacity: 1; transform: translateY(0); -o-transform: translateY(0); -ms-transform: translateY(0); -webkit-transform: translateY(0);}
+
+.flexslider li .FromLeft {transform: translateX(-100%); -o-transform: translateX(-100%); -ms-transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+.flexslider li.flex-active-slide .FromLeft {opacity: 1; transform: translateX(0); -o-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0);}
+
+.flexslider li .FromRight {transform: translateX(100%); -o-transform: translateX(100%); -ms-transform: translateX(100%); -webkit-transform: translateX(100%);}
+.flexslider li.flex-active-slide .FromRight {opacity: 1; transform: translateX(0); -o-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0);}
+
+.captionDelay1 {transition-delay: 0.1s; -webkit-transition-delay: 0.1s;}
+.captionDelay2 {transition-delay: 0.2s; -webkit-transition-delay: 0.2s;}
+.captionDelay3 {transition-delay: 0.3s; -webkit-transition-delay: 0.3s;}
+.captionDelay4 {transition-delay: 0.4s; -webkit-transition-delay: 0.4s;}
+.captionDelay5 {transition-delay: 0.5s; -webkit-transition-delay: 0.5s;}
+.captionDelay6 {transition-delay: 0.6s; -webkit-transition-delay: 0.6s;}
+.captionDelay7 {transition-delay: 0.7s; -webkit-transition-delay: 0.7s;}
+.captionDelay8 {transition-delay: 0.8s; -webkit-transition-delay: 0.8s;}
+.captionDelay9 {transition-delay: 0.9s; -webkit-transition-delay: 0.9s;}
+.captionDelay10 {transition-delay: 1s; -webkit-transition-delay: 1s;}
+
+.flexslider li.flex-active-slide .roll-bounceInDown,
+.flexslider li.flex-active-slide .roll-bounceOutDown,
+.flexslider li.flex-active-slide .roll-bounceInLeft,
+.flexslider li.flex-active-slide .roll-bounceInRight,
+.flexslider li.flex-active-slide .roll-tada,
+.flexslider li.flex-active-slide .roll-zoomIn,
+.flexslider li.flex-active-slide .roll-zoomOut {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    opacity: 1;
+}
+
+.flexslider li.flex-active-slide .roll-bounceInDown {
+    -moz-animation-name: bounceInDown;
+    -webkit-animation-name: bounceInDown;
+}
+
+.flexslider li.flex-active-slide .roll-bounceOutDown {
+    -moz-animation-name: bounceOutDown;
+    -webkit-animation-name: bounceOutDown;
+}
+
+.flexslider li.flex-active-slide .roll-bounceInLeft {
+    -moz-animation-name: bounceInLeft;
+    -webkit-animation-name: bounceInLeft;
+}
+
+.flexslider li.flex-active-slide .roll-bounceInRight {
+    -moz-animation-name: bounceInRight;
+    -webkit-animation-name: bounceInRight;
+}
+
+.flexslider li.flex-active-slide .roll-tada {
+    -moz-animation-name: tada;
+    -webkit-animation-name: tada;
+}
+
+.flexslider li.flex-active-slide .roll-zoomIn {
+    -moz-animation-name: zoomIn;
+    -webkit-animation-name: zoomIn;
+}
+
+.flexslider li.flex-active-slide .roll-zoomOut {
+    -moz-animation-name: zoomOut;
+    -webkit-animation-name: zoomOut;
+}
+
+.flexslider li.flex-active-slide .roll-zoBackground {
+    -webkit-animation: roll-zoBackground 30s infinite;
+    -o-animation: roll-zoBackground 30s infinite;
+    -ms-animation: roll-zoBackground 30s infinite;
+    -moz-animation: roll-zoBackground 30s infinite;
+    animation: roll-zoBackground 30s infinite;
+    -webkit-transition: all 1.3s ease-in-out;
+       -moz-transition: all 1.3s ease-in-out;
+         -ms-transition: all 1.3s ease-in-out;
+          -o-transition: all 1.3s ease-in-out;
+              transition: all 1.3s ease-in-out;
+}
+
+.flexslider li.flex-active-slide .roll-ziBackground {
+    -webkit-animation: roll-ziBackground 30s infinite;
+    -o-animation: roll-ziBackground 30s infinite;
+    -ms-animation: roll-ziBackground 30s infinite;
+    -moz-animation: roll-ziBackground 30s infinite;
+    animation: roll-ziBackground 30s infinite;
+    -webkit-transition: all 1.3s ease-in-out;
+       -moz-transition: all 1.3s ease-in-out;
+         -ms-transition: all 1.3s ease-in-out;
+          -o-transition: all 1.3s ease-in-out;
+              transition: all 1.3s ease-in-out;
+}
+
+/* Zoom Out Image Background */
+@keyframes roll-zoBackground {
+    0%   {transform: scale(1) rotateY(0deg);}
+    100% {transform: scale(1.2) rotateY(5deg);}
+}
+
+@-o-keyframes roll-zoBackground {
+    0%   {-o-transform: scale(1) rotateY(0deg);}
+    100% {-o-transform: scale(1.2) rotateY(10deg);}
+}
+
+@-ms-keyframes roll-zoBackground {
+    0%   {-ms-transform: scale(1) rotateY(0deg);}
+    100% {-ms-transform: scale(1.2) rotateY(10deg);}
+}
+
+@-moz-keyframes roll-zoBackground {
+    0%   {-moz-transform: scale(1) rotateY(0deg);}
+    100% {-moz-transform: scale(1.2) rotateY(10deg);}
+}
+
+@-webkit-keyframes roll-zoBackground {
+    0%   {-webkit-transform: scale(1) rotateY(0deg);}
+    100% {-webkit-transform: scale(1.2) rotateY(10deg);}
+}
+
+/* Zoom In Image Background */
+@keyframes roll-ziBackground {
+    0%   {transform: scale(1.3);}
+    100% {transform: scale(1);}
+}
+
+@-o-keyframes roll-ziBackground {
+    0%   {-o-transform: scale(1.3);}
+    100% {-o-transform: scale(1);}
+}
+
+@-ms-keyframes roll-ziBackground {
+    0%   {-ms-transform: scale(1.3);}
+    100% {-ms-transform: scale(1);}
+}
+
+@-moz-keyframes roll-ziBackground {
+    0%   {-moz-transform: scale(1.3);}
+    100% {-moz-transform: scale(1);}
+}
+
+@-webkit-keyframes roll-ziBackground {
+    0%   {-webkit-transform: scale(1.3);}
+    100% {-webkit-transform: scale(1);}
+}
