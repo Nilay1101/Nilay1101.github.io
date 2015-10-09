@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="icon" href="img/seasons.jpg" type="image/jpg">
+<title>| Seasons-HTML/CSS Editor |</title>
+<script type="text/javascript">
+
+var editboxHTML = 
+'<html class="expand close">' +
+'<head>' +
+'<style type="text/css">' +
+'.expand { width: 100%; height: 100%; }' +
+'.close { border-radius: 0px; margin: 0px; padding: 0px; }' +
+'html,body { overflow: hidden; }' +
+'<\/style>' +
+'<\/head>' +
+'<body class="expand close" onload="document.f.ta.focus(); document.f.ta.select();">' +
+'<form class="expand close" name="f">' +
+'<textarea class="expand close" style="background: #def;" name="ta" wrap="hard" spellcheck="false">' +
+'<\/textarea>' +
+'<\/form>' +
+'<\/body>' +
+'<\/html>';
+
+var defaultStuff = '<div style="border:1px solid seagreen"><h3 style="text-align:center">Welcome to the real-time HTML/CSS editor!<\/h3></div>\n' +
+'<p><h4> - Type HTML/CSS in the textarea above, and it will execute in the frame below.</h4><\/p>\n' +
+'<h4 style="color:seagreen ; text-align:center">Enjoy!! <\/h4>';
+
+var extraStuff = '<div style="position:absolute; text-decoration:none; margin:.3em; bottom:0em; right:0em;">\n<a href="index.html" target="_top">Exit<\/a><\/div>';
+
+var old = '';
+         
+function init()
+{
+  window.editbox.document.write(editboxHTML);
+  window.editbox.document.close();
+  window.editbox.document.f.ta.value = defaultStuff;
+  update();
+}
+
+function update()
+{
+  var textarea = window.editbox.document.f.ta;
+  var d = dynamicframe.document; 
+
+  if (old != textarea.value) {
+    old = textarea.value;
+    d.open();
+    d.write(old);
+    if (old.replace(/[\r\n]/g,'') == defaultStuff.replace(/[\r\n]/g,''))
+      d.write(extraStuff);
+    d.close();
+  }
+
+  window.setTimeout(update, 150);
+}
+
+</script>
+</head>
+
+<frameset resizable="yes" rows="50%,*" onload="init();">
+  <frame name="editbox" src="javascript:'';">
+  <frame name="dynamicframe" src="javascript:'';">
+</frameset>
+
+
+</html>
