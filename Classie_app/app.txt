@@ -1,2 +1,2 @@
 : Seasons Classie
-: my first website 
+: my first static website 
