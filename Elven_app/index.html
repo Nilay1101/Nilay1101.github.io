@@ -1,0 +1,154 @@
+<?php
+session_start();
+?>
+<html>
+<style>
+.re {
+border:0px;
+background-color:red;
+height:100px;
+color:white;
+font-weight:bold;
+width:7.5%;
+font-size:100px;
+font-family:Bradley Hand ITC;
+border-radius:51px;
+opacity:1;}
+
+.re2 {
+border:0px;
+background-color:lime;
+height:100px;
+color:white;
+font-weight:bold;
+width:7.5%;
+font-size:100px;
+font-family:Bradley Hand ITC;
+border-radius:51px;
+opacity:1;
+top:1px;}
+
+.re3 {
+border:0px;
+background-color:skyblue;
+height:100px;
+color:white;
+font-weight:bold;
+width:7.5%;
+font-size:100px;
+font-family:Bradley Hand ITC;
+border-radius:51px;
+opacity:1;}
+
+.re4 {
+border:0px;
+background-color:darkorange;
+height:100px;
+color:white;
+font-weight:bold;
+width:7.5%;
+font-size:100px;
+font-family:Bradley Hand ITC;
+border-radius:51px;
+opacity:1;}
+
+.re5 {
+background-color:black;
+border:0px;
+height:100px;
+color:white;
+font-weight:bold;
+width:7.5%;
+font-size:100px;
+font-family:Bradley Hand ITC;
+border-radius:51px;
+opacity:1;
+}
+
+.fback0 {
+	position:absolute;
+	left:800px;
+	top:10px;
+	background-color:seagreen;
+	opacity:1;
+	border:1px;
+	height:400px;
+	width:350px;
+	padding-left:150px;
+	padding-top:100px;
+	border-radius:250px;
+	margin-top:30px;
+}
+
+.iback0 input {
+	background-color:#FFFFFF;
+    font-size: 12px; 
+	border: 0px;
+	text-transform: uppercase; 
+	margin-top: 10px; 
+	color:black; 
+	letter-spacing: 1px; 
+	padding: 10px 40px;
+	font-family: calibri, helvetica, arial;
+}
+
+ul#menu {
+padding:0;
+}
+
+ul#menu li {
+display:inline;
+}
+
+ul#menu li a {
+background-color:black;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+background-color:orange;
+}
+
+.about {
+	position:absolute;
+	left:840px;
+	top:600px;
+	width:31%;
+	height:10%;
+	background:slateblue;
+	opacity:0.9;
+	padding-left:40px;
+	padding-top:10px;
+	
+	
+}
+</style>
+<body>
+<br><div class="re">&nbsp;E</div><br><br>
+<div class="re2">&nbsp;l</div><br><br>
+<div class="re4">&nbsp;v</div><br><br>
+<div class="re5">&nbsp;e</div><br><br>
+<div class="re3">&nbsp;n</div>
+<?php require 'back.php' ;
+$name=$email="";?>
+<div class="fback0">
+<form class="iback0" action="main.php" method="post">
+<h4 style="color:white ; font-family: calibri, helvetica, arial;">Name:<br><input type="text" name="name"><br>
+<h4 style="color:white ; font-family: calibri, helvetica, arial;">Email:<br><input type="text" name="email"><br>
+<br><br><input type="submit" value="submit">
+</form>
+</div>
+<div class="about">
+<ul id="menu">
+ <li><a href="about.php">About</a></li>
+ <li><a href="mailto:seasondesigns29@gmail.com">Remark via Mail</a></li>
+ <li><a href="http://www.facebook.com">Tell your friends</a></li>
+</ul>
+</div>
+</body>
+<?phpsession_destroy(); 
+?>
+</html>
