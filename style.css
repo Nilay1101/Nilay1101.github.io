@@ -4548,15 +4548,7 @@ div.tz-event-content-style-1 > span{
     background-position: 30% 10px;
     background-image: url("img/profile/back.jpg");
 }
-.parallax-style-40{
-    background-attachment: fixed !important;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-position: 30% 10px;
-    background-image: url("img/profile/back0.png");
-}
+
 .tz-lastest-event-style-4{
     background: #ffffff;
     padding-bottom: 77px;
