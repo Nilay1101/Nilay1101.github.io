@@ -752,6 +752,7 @@ header.is-sticky {
 .roll-slider {
 	position: relative;
 	overflow: hidden;
+	height:455px;
 }
 
 .flex-direction-nav li a {
@@ -828,9 +829,12 @@ header.is-sticky {
 
 .roll-slider .content-slider {
 	position: absolute;
-	left: 19.53125%;
+	border:1px solid white;
+	padding-left:10px;
+	padding-top:17px;
+	left: 5.53125%;
 	top: 37.28%;
-	width: 570px;
+	width: 800px;
    -webkit-transition: all 0.3s ease-in-out;
       -moz-transition: all 0.3s ease-in-out;
        -ms-transition: all 0.3s ease-in-out;
