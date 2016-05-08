@@ -2550,7 +2550,7 @@ i.uxb-icon.float-right {
 
 #content-container .ui-accordion-header.ui-state-active {
 	background: none;
-	border-color: #b30000;
+	border-color: white;
 	border-width: 1px;
 	border-style: solid;
 }
@@ -2572,7 +2572,7 @@ i.uxb-icon.float-right {
 }
 
 #content-container .ui-accordion .ui-accordion-header.ui-state-active a {
-	color: #b30000;
+	color: white;
 }
 
 .ui-accordion .ui-accordion-content {
