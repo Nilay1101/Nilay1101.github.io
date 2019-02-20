@@ -402,8 +402,8 @@ h1.big-title
     font-family: 'Montserrat', sans-serif;    
     font-weight: 700;
     font-size: 20px;
-    width: 430px;
-    background-color: #E74C78;
+    width: 400px;
+    background-color: rgb(255, 186, 66);
     text-align: center;
 }
 
@@ -421,8 +421,8 @@ h1.big-title
 
 .portfolio-holder .portfolio-load-more-holder
 {    
-    margin-right: 0;
-    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
 }
 
 .more-posts
