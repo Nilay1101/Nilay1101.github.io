@@ -767,7 +767,114 @@ a.research-popup-holder:hover img.popup-play
 
 /* END SKILLS SECTION */
 
+/* NEWS SECTION */
 
+#news
+{
+    background-color: rgb(34, 28, 90); 
+    background-image: url("demo-images/background_img_04.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: cover; 
+    z-index: 6;
+}
+
+.blog-item-holder
+{    
+    padding: 35px 0;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.blog-item-holder:last-of-type 
+{
+    border: none;
+}
+
+.blog-item-holder .num 
+{
+    display: inline-block;
+    width: 110px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #32db89;
+}
+
+.blog-item-holder .info 
+{
+    display: inline-block;
+    width: 235px;
+}
+
+.blog-item-holder .info .cat-links a 
+{
+    color: #ee87a4;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.blog-item-holder .entry-title 
+{
+    display: inline-block;
+    width: 325px;
+    padding: 0;
+    vertical-align: top;
+    line-height: 0;
+}
+
+.blog-holder .entry-title a
+{    
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 700;
+    display: block;
+    line-height: 20px;
+}
+
+.latest-post-bottom-text
+{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.latest-post-bottom-text a 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;    
+    font-size: 16px;
+    line-height: 100%;    
+    color: #32db89;
+    letter-spacing: 5px;
+    border-bottom: 2px solid;
+    padding-left: 5px;
+    padding-bottom: 5px; 
+}
+
+.testimonial-slider-holder
+{
+    max-width: 500px;
+    padding-left: 50px;
+}
+
+.testimonial-text
+{
+    font-size: 22px;
+    line-height: 40px;    
+}
+
+.testimonial-author
+{
+    padding-top: 90px;
+    font-size: 16px;
+    letter-spacing: 3px;    
+}
+
+/* END NEWS SECTION */
 
 
 /* CONNECT SECTION */
