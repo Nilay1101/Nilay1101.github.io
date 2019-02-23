@@ -60,10 +60,7 @@ body a:hover
     line-height: 0;
 }
 
-
-
 /* TOP MENU */
-
 .menu-wrapper
 {    
     transition: background-color .2s linear;
@@ -128,13 +125,9 @@ body a:hover
     transition: color .2s linear;
     color: #fff;
 }
-
 /* END TOP MENU */
 
-
-
 /* GENERAL SECTION */
-
 .section
 {    
     position: relative;
@@ -248,7 +241,6 @@ body a:hover
 {
     padding-bottom: 0;
 }
-
 /* END GENERAL SECTION */
 
 
@@ -308,63 +300,9 @@ h1.big-title
     bottom: 0;
     width: 100%;
 }
-
 /* END HOME SECTION */
 
-
-
-/* SERVICE SECTION */
-
-#services
-{
-    background-color: #221c5a;
-    z-index: 9;
-}
-
-#services .section-title-holder
-{
-    background-color: #32DB8A
-}
-
-#services .section-title-holder span
-{
-    color: #55B286;
-}
-
-.service-holder 
-{
-    display: inline-block;
-    width: 335px;
-}
-
-.service-holder img 
-{
-    display: inline-block;
-    width: 50px !important;
-    vertical-align: top;
-}
-
-.service-content-holder 
-{
-    display: inline-block;
-    width: 240px;
-    margin-top: 55px;
-    margin-left: 5px;
-}
-
-.service-title 
-{
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 24px;
-    padding-bottom: 10px;
-}
-
-/* END SERVICE SECTION */
-
-
-
 /* PORTFOLIO SECTION */
-
 #portfolio
 {
     background-color: #221C5A; 
@@ -555,13 +493,9 @@ div.pp_default .pp_loaderIcon
 {
     display: none !important;
 }
-
 /* END PORTFOLIO SECTION*/
 
-
-
 /* BIG SECTION */
-
 #big
 {
     background-color: rgb(34, 28, 90); 
@@ -631,12 +565,10 @@ div.pp_default .pp_loaderIcon
 {
     width: 100%;
 }
-
 /* END BIG SECTION */
 
 
 /* RESEARCH SECTION */
-
 #research
 {
     background-color: rgb(34, 28, 90); 
@@ -690,10 +622,7 @@ a.research-popup-holder:hover img.popup-play
 }
 /* END RESEARCH SECTION */
 
-
 /* SKILLS SECTION */
-
-
 #skills
 {
     background-color: rgb(34, 28, 90); 
@@ -702,6 +631,16 @@ a.research-popup-holder:hover img.popup-play
     background-position: left top; 
     background-size: 100%; 
     z-index: 4;
+}
+
+#skills .section-title-holder
+{
+    background-color: #e64b77;
+}
+
+#skills .section-title-holder span
+{
+    color: #b24564;
 }
 
 .progress_bar 
@@ -764,11 +703,9 @@ a.research-popup-holder:hover img.popup-play
     left: 0;
     width: 100%;
 }
-
 /* END SKILLS SECTION */
 
 /* NEWS SECTION */
-
 #news
 {
     background-color: rgb(34, 28, 90); 
@@ -873,12 +810,10 @@ a.research-popup-holder:hover img.popup-play
     font-size: 16px;
     letter-spacing: 3px;    
 }
-
 /* END NEWS SECTION */
 
 
 /* CONNECT SECTION */
-
 #connect
 {
     background-color: rgb(34, 28, 90); 
@@ -917,13 +852,9 @@ p.custom-field-class
     display: inline-block;
     margin-bottom: 60px;
 }
-
-
 /* END CONNECT SECTION */
 
-
 /* FOOTER */
-
 footer
 {
     background-color: #221C5A;
@@ -959,11 +890,9 @@ footer
     margin: 0 10px;
     font-size: 20px;
 }
-
 /* END FOOTER */
 
 /* RESPONSIVE PART */
-
 @media screen and (max-width: 1270px) {   
 
     .content-1170 
@@ -1357,8 +1286,8 @@ footer
 
     .portfolio-text-holder 
     {
-        display: none !important;
-        opacity: 0 !important;
+        display: none ;
+        opacity: 1 ;
     }   
 
     .main-menu
