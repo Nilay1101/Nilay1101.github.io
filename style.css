@@ -499,7 +499,7 @@ div.pp_default .pp_loaderIcon
 #big
 {
     background-color: rgb(34, 28, 90); 
-    background-image: url("images/background00.png"); 
+    background-image: url("images/background00.jpg"); 
     background-repeat: no-repeat; 
     background-position: center top; 
     background-size: cover; 
@@ -709,7 +709,7 @@ a.research-popup-holder:hover img.popup-play
 #news
 {
     background-color: rgb(34, 28, 90); 
-    background-image: url("demo-images/background_img_04.jpg"); 
+    background-image: url("images/background00.jpg"); 
     background-repeat: no-repeat; 
     background-position: center center; 
     background-size: cover; 
